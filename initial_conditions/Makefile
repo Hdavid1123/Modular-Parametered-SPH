@@ -14,7 +14,7 @@ LYF = 1.0
 NX = 100
 NY = 100
 RHO = 1000.0
-H = NAN
+H = 0.0001
 LXB = 1.2
 LYB = 1.2
 
@@ -26,6 +26,7 @@ $(EXEC): $(OBJ)
 
 # Regla para ejecutar el programa pasando los 10 parámetros
 run: $(EXEC)
+	
 	./$(EXEC) $(XF) $(YF) $(LXF) $(LYF) $(NX) $(NY) $(RHO) $(H) $(LXB) $(LYB)
 
 # Limpieza de los archivos generados

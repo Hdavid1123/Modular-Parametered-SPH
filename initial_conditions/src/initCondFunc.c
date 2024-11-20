@@ -34,6 +34,7 @@ void createParticles(Particles *part, int counter,
     part[counter].dWy = NULL;
 
     part[counter].type = p_type;
+  
 }
 
 void realloc_particles_test(int *nPart, int npV) {
@@ -51,7 +52,7 @@ void realloc_particles_test(int *nPart, int npV) {
 
 void write_particles(FILE *file, int start_index, int num_particles, char *boundary_type) {
     int end_index;
-
+    fprintf(stdout, "adfasdf %d\n", num_particles);
     if (strcmp(boundary_type, "bottom") == 0 || strcmp(boundary_type, "top") == 0) {
         end_index = start_index + num_particles + 1;  // npV+1
     } else if (strcmp(boundary_type, "right") == 0 || strcmp(boundary_type, "left") == 0) {
