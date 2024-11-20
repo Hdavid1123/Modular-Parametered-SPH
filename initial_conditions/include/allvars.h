@@ -6,6 +6,8 @@
 #include <math.h>
 #include <time.h>
 #include <malloc.h>
+#include <string.h>
+#include <ctype.h>
 
 #define X 0
 #define Y 1

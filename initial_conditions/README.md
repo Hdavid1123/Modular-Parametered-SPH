@@ -1,0 +1,1 @@
+Los 10 parámetros de las condiciones iniciales se encuentran definidos dentro del MakeFile.
